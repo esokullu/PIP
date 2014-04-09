@@ -1,6 +1,6 @@
-#PIP
+#hack-mvc
 
-PIP is a tiny application framework built for people who use a LAMP stack. PIP aims to be as simple as possible to set up and use.
+hack-mvc is an MVC framework for the hack language. hack-mvc is a fork of PIP, uses mustache.php for View, and Models both mysql and DynamoDB. /** change the rest. **/ PIP aims to be as simple as possible to set up and use.
 
 Visit [http://gilbitron.github.com/PIP](http://gilbitron.github.com/PIP/) for more information and documentation.
 
