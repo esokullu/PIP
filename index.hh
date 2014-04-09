@@ -1,6 +1,6 @@
-<?php
+<?hh
 /*
- * PIP v0.5.3
+ * hack-lang v0.9.0
  */
 
 //Start the Session
@@ -11,16 +11,16 @@ define('ROOT_DIR', realpath(dirname(__FILE__)) .'/');
 define('APP_DIR', ROOT_DIR .'application/');
 
 // Includes
-require(APP_DIR .'config/config.php');
-require(ROOT_DIR .'system/model.php');
-require(ROOT_DIR .'system/view.php');
-require(ROOT_DIR .'system/controller.php');
-require(ROOT_DIR .'system/pip.php');
+require(APP_DIR . 'config/config.hh');
+require(ROOT_DIR .'system/model.hh');
+require(ROOT_DIR .'system/view.hh');
+require(ROOT_DIR .'system/controller.hh');
+require(ROOT_DIR . 'system/hack_mvc.hh');
 
 // Define base URL
 global $config;
 define('BASE_URL', $config['base_url']);
 
-pip();
+hack_mvc();
 
 ?>

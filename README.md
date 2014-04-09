@@ -2,7 +2,7 @@
 
 hack-mvc is an MVC framework for the hack language. hack-mvc is a fork of PIP, uses mustache.php for View, and Models both mysql and DynamoDB. /** change the rest. **/ PIP aims to be as simple as possible to set up and use.
 
-Visit [http://gilbitron.github.com/PIP](http://gilbitron.github.com/PIP/) for more information and documentation.
+Visit [http://esokullu.github.com/hack-mvc](http://esokullu.github.com/hack-mvc/) for more information and documentation.
 
 ## Requirements
 
@@ -12,16 +12,14 @@ Visit [http://gilbitron.github.com/PIP](http://gilbitron.github.com/PIP/) for mo
 
 ## Installation
 
-* Download PIP and extract
+* Download hack-mvc and extract
 * Navigate to `application/config/config.php` and fill in your `base_url`
 * You are ready to rock! Point your browser to your `base_url` and hopefully see a welcome message.
 
 ## Documentation
 
-Visit [http://gilbitron.github.com/PIP](http://gilbitron.github.com/PIP/) to see the documentation.
+Visit [http://esokullu.github.com/hack-mvc](http://esokullu.github.com/hack-mvc/) to see the documentation.
 
 ## License
 
-PIP is released under the MIT license.
-
-Want to say thanks? [Consider tipping me](https://www.gittip.com/gilbitron).
+hack-mvc is released under the MIT license.

@@ -1,6 +1,6 @@
 <?php
 
-function pip()
+function hack_mvc()
 {
 	global $config;
     
@@ -14,7 +14,7 @@ function pip()
 	$script_url  = (isset($_SERVER['PHP_SELF'])) ? $_SERVER['PHP_SELF'] : '';
     	
 	// Get our url path and trim the / of the left and the right
-	if($request_url != $script_url) $url = trim(preg_replace('/'. str_replace('/', '\/', str_replace('index.php', '', $script_url)) .'/', '', $request_url, 1), '/');
+	if($request_url != $script_url) $url = trim(preg_replace('/'. str_replace('/', '\/', str_replace('index.hh', '', $script_url)) .'/', '', $request_url, 1), '/');
     
 	// Split the url into segments
 	$segments = explode('/', $url);
