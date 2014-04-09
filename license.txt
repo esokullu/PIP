@@ -1,3 +1,4 @@
+ Copyright (c) 2014 Emre Sokullu, GROU.PS Inc.
  Copyright (c) 2011 Gilbert Pellegrom, Dev7studios
 
  Permission is hereby granted, free of charge, to any person
