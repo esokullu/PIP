@@ -14,7 +14,7 @@ Visit [http://esokullu.github.com/hack-mvc](http://esokullu.github.com/hack-mvc/
 ## Installation
 
 * Download hack-mvc and extract
-* Navigate to `application/config/config.php` and fill in your `base_url`
+* Navigate to `application/config/config.hh` and fill in your `base_url`
 * You are ready to rock! Point your browser to your `base_url` and hopefully see a welcome message.
 
 ## Documentation
