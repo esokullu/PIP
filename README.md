@@ -1,14 +1,15 @@
 #hack-mvc
 
-hack-mvc is an MVC framework for the hack language. hack-mvc is a fork of PIP, uses mustache.php for View, and Models both mysql and DynamoDB. /** change the rest. **/ PIP aims to be as simple as possible to set up and use.
+hack-mvc is an MVC framework for the hack language. hack-mvc is a fork of PIP, and Models mysql.
+
+hack-mvc aims to be as simple as possible to set up, use and fork.
 
 Visit [http://esokullu.github.com/hack-mvc](http://esokullu.github.com/hack-mvc/) for more information and documentation.
 
 ## Requirements
 
-* PHP 5.1 or greater
-* MySQL 4.1.2 or greater
-* The mod_rewrite Apache module
+* hhvm 3.0 or greater
+* The mod_rewrite module (of any web server as long as you know what you're doing)
 
 ## Installation
 
@@ -19,6 +20,11 @@ Visit [http://esokullu.github.com/hack-mvc](http://esokullu.github.com/hack-mvc/
 ## Documentation
 
 Visit [http://esokullu.github.com/hack-mvc](http://esokullu.github.com/hack-mvc/) to see the documentation.
+
+## TODO
+
+* Use mustache.php for View
+* Model DynamoDB
 
 ## License
 

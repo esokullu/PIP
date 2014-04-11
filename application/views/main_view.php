@@ -2,8 +2,8 @@
 	
     <div id="content">
         
-        <h1>Welcome to PIP</h1>
-        <p>To get started please read the documentation at <a href="http://pip.dev7studios.com/">http://pip.dev7studios.com</a>.</p>
+        <h1>Welcome to hack-mvc</h1>
+        <p>Hello <?=$var['word']?></p>
         
     </div>
 

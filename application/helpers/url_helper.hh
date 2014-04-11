@@ -1,15 +1,12 @@
-<?php
+<?hh // strict
 
 class Url_helper {
 
-	function base_url()
-	{
-		global $config;
-		return $config['base_url'];
+	public function base_url(): string {
+		return cBaseURL;
 	}
 	
-	function segment($seg)
-	{
+	public function segment(mixed $seg): bool {
 		if(!is_int($seg)) return false;
 		
 		$parts = explode('/', $_SERVER['REQUEST_URI']);
@@ -17,5 +14,3 @@ class Url_helper {
 	}
 	
 }
-
-?>

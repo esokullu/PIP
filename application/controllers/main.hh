@@ -1,13 +1,11 @@
-<?php
+<?hh // strict
 
 class Main extends Controller {
 	
-	function index()
-	{
+	public function index(): void {
 		$template = $this->loadView('main_view');
+        $template->set('word','world.');
 		$template->render();
 	}
     
 }
-
-?>

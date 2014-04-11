@@ -1,51 +1,41 @@
-<?php
+<?hh
 
 class Model {
 
-	private $connection;
+	private ?mixed $connection;
 
-	public function __construct()
-	{
-		global $config;
-		
-		$this->connection = mysql_pconnect($config['db_host'], $config['db_username'], $config['db_password']) or die('MySQL Error: '. mysql_error());
-		mysql_select_db($config['db_name'], $this->connection);
+	public function __construct(): void {
+		$this->connection = mysql_pconnect(cDbHost, cDbUsername, cDbPassword) || die('MySQL Error: '. mysql_error());
+		mysql_select_db(cDbName, $this->connection);
 	}
 
-	public function escapeString($string)
-	{
+	public function escapeString(string $string): mixed  {
 		return mysql_real_escape_string($string);
 	}
 
-	public function escapeArray($array)
-	{
+	public function escapeArray(array $array): array {
 	    array_walk_recursive($array, create_function('&$v', '$v = mysql_real_escape_string($v);'));
 		return $array;
 	}
 	
-	public function to_bool($val)
-	{
+	public function to_bool(mixed $val): bool {
 	    return !!$val;
 	}
 	
-	public function to_date($val)
-	{
+	public function to_date(int $val): string {
 	    return date('Y-m-d', $val);
 	}
 	
-	public function to_time($val)
-	{
+	public function to_time(int $val): string {
 	    return date('H:i:s', $val);
 	}
 	
-	public function to_datetime($val)
-	{
+	public function to_datetime(int $val): string {
 	    return date('Y-m-d H:i:s', $val);
 	}
 	
-	public function query($qry)
-	{
-		$result = mysql_query($qry) or die('MySQL Error: '. mysql_error());
+	public function query(string $qry): mixed /* @todo choose something */ 	{
+		$result = mysql_query($qry) || die('MySQL Error: '. mysql_error());
 		$resultObjects = array();
 
 		while($row = mysql_fetch_object($result)) $resultObjects[] = $row;
@@ -53,11 +43,9 @@ class Model {
 		return $resultObjects;
 	}
 
-	public function execute($qry)
-	{
-		$exec = mysql_query($qry) or die('MySQL Error: '. mysql_error());
+	public function execute(string $qry): mixed /* @todo choose something */ {
+		$exec = mysql_query($qry) || die('MySQL Error: '. mysql_error());
 		return $exec;
 	}
     
 }
-?>
