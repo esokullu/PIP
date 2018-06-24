@@ -3,7 +3,7 @@
 class hack_mvc {
 
 
-    public function __construct(): void {
+    public function __construct() {
 
         // Set our defaults
         $controller = cDefaultController;
